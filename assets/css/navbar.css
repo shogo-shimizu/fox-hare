@@ -1,0 +1,202 @@
+.menunavigation {
+  width: 100vw;
+  height: 150px;
+  transition: 0.5s;
+  background-color: #f8f6ed;
+  position: relative;
+  z-index: 999;
+  box-shadow: 0 0 10px rgba(51, 51, 51, 0.4);
+}
+@media (max-width:768px) {
+  .menunavigation {
+    height: 60px;
+    position: fixed;
+    border-top: none;
+    top: 0;
+    left: 0;
+  }
+}
+.menunavigation nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width:768px) {
+  .menunavigation nav {
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+}
+.menunavigation nav .logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.menunavigation nav .logo img {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 30px;
+  height: 100%;
+  width: auto;
+  filter: drop-shadow(1px 1px 5px rgba(51, 51, 51, 0.4));
+}
+.menunavigation nav .logo h4 {
+  margin: 0;
+}
+.menunavigation nav .navLinksContainer {
+  width: 38%;
+}
+@media (max-width:1024px) {
+  .menunavigation nav .navLinksContainer {
+    width: 60%;
+  }
+}
+@media (max-width:768px) {
+  .menunavigation nav .navLinksContainer {
+    width: 50%;
+    height: calc(100vh - 50px);
+    top: 60px;
+    right: 0;
+    background-color: #f8f6ed;
+    position: fixed;
+    border-left: 1px solid #7DB9DE;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: 1s;
+  }
+}
+.menunavigation nav .navLinksContainer.navActive {
+  transform: translateX(0%) !important;
+}
+.menunavigation nav .navLinks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+@media (max-width:768px) {
+  .menunavigation nav .navLinks {
+    width: 100%;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 100px;
+    padding-left: 0;
+  }
+}
+.menunavigation nav .navLinks li {
+  list-style: none;
+  text-decoration: none;
+  font-weight: bolder;
+  transition: all 0.5s ease-in-out;
+}
+@media (max-width:768px) {
+  .menunavigation nav .navLinks li {
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  @keyframes navLinksFade {
+    0% {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+.menunavigation nav .navLinks li a {
+  text-decoration: none;
+  color: #7DB9DE;
+  transition: 0.3s;
+}
+.menunavigation nav .navLinks li a:hover {
+  color: #FB966E;
+  font-size: 1.8em;
+}
+.menunavigation nav .blogInfo {
+  height: 30%;
+  width: 100%;
+  display: none;
+}
+@media (max-width:768px) {
+  .menunavigation nav .blogInfo {
+    display: block;
+  }
+}
+.menunavigation nav .blogInfo hr {
+  width: 90%;
+  margin: 0 auto;
+  height: 3px;
+  background-color: #7DB9DE;
+  margin-bottom: 20px;
+}
+.menunavigation nav .blogInfo p {
+  font-size: 0.7em;
+  padding-left: 10%;
+}
+.menunavigation nav .blogInfo .snsButton {
+  width: 100%;
+  padding-left: 10%;
+}
+.menunavigation .burger {
+  display: none;
+  cursor: pointer;
+}
+@media (max-width:768px) {
+  .menunavigation .burger {
+    display: block;
+  }
+}
+.menunavigation .burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #7DB9DE;
+  margin: 5px;
+  transition: all 0.7s ease-in-out;
+}
+.menunavigation .burger.toggle .line1 {
+  transform: rotate(-405deg) translate(-5px, 6px);
+}
+.menunavigation .burger.toggle .line2 {
+  opacity: 0;
+}
+.menunavigation .burger.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.menunavigation.navFixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  margin-top: 0;
+  background-color: #7DB9DE;
+  color: #f8f6ed;
+}
+@media (max-width:768px) {
+  .menunavigation.navFixed {
+    background-color: #f8f6ed;
+    color: #7DB9DE;
+  }
+}
+.menunavigation.navFixed nav .navLinks li a {
+  color: white;
+  transition: 0.3s;
+}
+.menunavigation.navFixed nav .navLinks li a:hover {
+  font-size: 1.8em;
+}
+@media (max-width:768px) {
+  .menunavigation.navFixed nav .navLinks li a {
+    color: #7DB9DE;
+  }
+}/*# sourceMappingURL=navbar.css.map */

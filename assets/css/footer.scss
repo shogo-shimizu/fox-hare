@@ -1,0 +1,41 @@
+@import '../sass/colors';
+@import '../../assets/sass/variables';
+
+footer{
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: $color-blue;
+    color: $color-white;
+    @media($md){
+        display: block;
+    }
+    div{
+        h2{
+            margin-bottom: 20px;
+        }
+        p{
+            padding-left: 10px;
+            margin-bottom: 5px;
+        }
+        @media($md){
+            margin-bottom: 30px;
+        }
+    }
+    .footerTitle{
+        .snsFooter{
+            a{
+                text-decoration: none;
+                color: $color-white;
+            }
+            i {
+                font-size: 1.8em;
+                margin: 5px;
+                &:hover{
+                    color: $color_orange;
+
+                }
+            }
+        }
+    }
+}

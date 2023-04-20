@@ -1,0 +1,35 @@
+footer {
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #7DB9DE;
+  color: #f8f6ed;
+}
+@media (max-width:768px) {
+  footer {
+    display: block;
+  }
+}
+footer div h2 {
+  margin-bottom: 20px;
+}
+footer div p {
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
+@media (max-width:768px) {
+  footer div {
+    margin-bottom: 30px;
+  }
+}
+footer .footerTitle .snsFooter a {
+  text-decoration: none;
+  color: #f8f6ed;
+}
+footer .footerTitle .snsFooter i {
+  font-size: 1.8em;
+  margin: 5px;
+}
+footer .footerTitle .snsFooter i:hover {
+  color: #FB966E;
+}/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,161 @@
+@import '../../assets/sass/colors';
+@import '../../assets/sass/variables';
+
+// main
+div#ez-toc-container
+{
+  width: 80%;
+  border-radius: 8px;
+  padding-top: 1.1em;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  box-shadow: 0px 15px 20px rgba(166, 188, 220, 0.4);
+}
+
+div#ez-toc-container p.ez-toc-title:before
+{
+  content: '\f4d8';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
+  padding-right: 8px;
+  color: $color-green;
+}
+#ez-toc-container nav
+{
+  margin-top: 1.1em;
+  margin-bottom: 1.1em;
+}
+#ez-toc-container
+{
+  // font-family: FontAwesome, "丸フォーク M";
+  padding-left: 2.5em;
+  @media($md){
+    padding-left: 1em;
+  }
+}
+#ez-toc-container ul
+{
+  // font-family: FontAwesome, "丸フォーク M";
+  padding-left: 1em;
+  box-shadow: none;
+  border: none;
+  @media($md){
+    padding-left: 0;
+  }
+}
+div#ez-toc-container ul li
+{
+  line-height: 2em;
+  padding-left: 0.5em;
+}
+.ez-toc-counter nav ul li a::before
+{
+  // color: #428bca;
+  // content: '\f35a';
+  color: $color_orange;
+  content: '\f787';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  padding-right: 0.3em;
+}
+.ez-toc-counter nav ul ul li a::before
+{
+  color: #a0def0;
+  content: '\f0da';
+  font-family: 'Font Awesome 5 Free';
+}
+.ez-toc-counter nav ul ul ul li a::before
+{
+  color: #a0def0;
+  content: '\f0da';
+  font-family: 'Font Awesome 5 Free';
+}
+
+
+/** 
+*sticky
+*/
+div.ez-toc-sticky{
+  .ez-toc-open-icon{
+    top: 10%;
+    box-shadow: 0 0 10px rgba(#333,0.4);
+  }
+  .ez-toc-sticky-fixed{
+    top: 10%;
+    .ez-toc-sidebar{
+      padding: 20px;
+      border-radius: 0 20px 20px 0;
+      #ez-toc-sticky-container{
+        margin-top: 40px;
+      }
+    }
+  }
+}
+div#ez-toc-sticky-container
+{
+  // border-radius: 8px;
+  padding-top: 1.1em;
+  margin-top: 2em;
+  // box-shadow: 0px 15px 20px rgba(166, 188, 220, 0.4);
+  ul{
+    ul{
+      margin-left: 0.5em;
+    }
+    li{
+      padding-left: 1.2em;
+    }
+  }
+}
+
+.ez-toc-sticky-title-container p.ez-toc-sticky-title:before
+{
+  content: '\f4d8';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
+  padding-right: 8px;
+  color: $color-green;
+}
+#ez-toc-sticky-container nav
+{
+  margin-top: 1.1em;
+  margin-bottom: 1.1em;
+}
+#ez-toc-sticky-container
+{
+  // font-family: FontAwesome, "丸フォーク M";
+  padding-left: 2.5em;
+  ul{
+    ul{
+      margin-left: 0.5em;
+    }
+    li{
+      padding-left: 0.5em;
+      line-height: 2em;
+    }
+  }
+}
+
+.ez-toc-sticky-toggle-counter nav ul li a::before
+{
+  // color: #428bca;
+  // content: '\f52d';
+  color: $color_orange;
+  content: '\f787';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 800;
+  padding-right: 5px;
+}
+.ez-toc-sticky-toggle-counter nav ul ul li a::before
+{
+  color: #a0def0;
+  content: '\f0da';
+  font-family: 'Font Awesome 5 Free';
+}
+.ez-toc-sticky-toggle-counter nav ul ul ul li a::before
+{
+  color: #a0def0;
+  content: '\f0da';
+  font-family: 'Font Awesome 5 Free';
+}
