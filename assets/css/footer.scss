@@ -11,6 +11,10 @@ footer{
         display: block;
     }
     div{
+        a{
+            text-decoration: none;
+            color: $color_white;
+        }
         h2{
             margin-bottom: 20px;
         }

@@ -139,6 +139,10 @@
             .snsButton{
                 width: 100%;
                 padding-left: 10%;
+                a{
+                    text-decoration: none;
+                    color: $color_blue;
+                }
             }
         }
     }

@@ -147,6 +147,10 @@
   width: 100%;
   padding-left: 10%;
 }
+.menunavigation nav .blogInfo .snsButton a {
+  text-decoration: none;
+  color: #7DB9DE;
+}
 .menunavigation .burger {
   display: none;
   cursor: pointer;

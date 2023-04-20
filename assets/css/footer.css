@@ -10,6 +10,10 @@ footer {
     display: block;
   }
 }
+footer div a {
+  text-decoration: none;
+  color: #f8f6ed;
+}
 footer div h2 {
   margin-bottom: 20px;
 }

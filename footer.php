@@ -14,7 +14,9 @@
     <div class="footerInfo">
         <h2>Blog Infomation</h2>
         <p>お問合せ</p>
-        <p><?php bloginfo('admin_email') ?></p>
+        <a href="mailto:<?php bloginfo('admin_email') ?>">
+            <p><?php bloginfo('admin_email') ?></p>
+        </a>
         <p></p>
     </div>
     <!-- <div class="footerContact">
