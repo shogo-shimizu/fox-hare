@@ -272,6 +272,44 @@ main .content .singleThumbnail img {
   height: auto;
   max-width: 100%;
 }
+main .content .categoryLinks {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .content .categoryLinks a {
+  background-color: #005CAF;
+  border-radius: 10px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  padding: 2px 5px 2px 5px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 0.8em;
+  transition: 0.3s;
+}
+main .content .categoryLinks a:hover {
+  opacity: 0.6;
+}
+main .content .tagLinks {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .content .tagLinks a {
+  background-color: #FB966E;
+  border-radius: 10px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  padding: 2px 5px 2px 5px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 0.8em;
+  transition: 0.3s;
+}
+main .content .tagLinks a:hover {
+  opacity: 0.6;
+}
 main .content h1 {
   color: #9F353A;
   margin-top: 20px;
