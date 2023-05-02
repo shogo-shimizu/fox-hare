@@ -25,6 +25,9 @@ body{
             object-fit: cover;
         }
     }
+    p{
+      font-size: 1.1em;
+    }
     h1{
         color: $color_red;
         margin-top: 20px;
@@ -52,7 +55,8 @@ body{
         border: dashed 2px white;
         padding: 0.2em 0.5em;
         color: $color_white;
-        margin-bottom: 30px;
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
     // h2{
     //     border-left: 6px solid $color_deepBlue;
@@ -71,6 +75,7 @@ body{
         padding-left: 25px;
         padding-bottom: 5px;
         margin-bottom: 30px;
+        margin-top: 60px;
         &:before {
             position: absolute;
             content: '';
@@ -187,7 +192,7 @@ body{
         margin-left: 30px;/*はみ出ないように調整*/
         margin-right: 10px;/*はみ出ないように調整*/
         padding: 0.2em 0.5em 0.2em 2em;
-        display: inline-block;
+        // display: inline-block;
         
         ul, ol{
             background: none;
@@ -203,7 +208,7 @@ body{
         line-height: 1.5;
         padding: 0.2em 0;
         margin-left: 30px;
-        white-space: nowrap;
+        white-space: wrap;
       }
     
     

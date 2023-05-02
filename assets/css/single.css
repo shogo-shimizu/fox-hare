@@ -310,6 +310,9 @@ main .content .tagLinks a {
 main .content .tagLinks a:hover {
   opacity: 0.6;
 }
+main .content p {
+  font-size: 1.1em;
+}
 main .content h1 {
   color: #9F353A;
   margin-top: 20px;
@@ -337,13 +340,15 @@ main .content h2 {
   border: dashed 2px white;
   padding: 0.2em 0.5em;
   color: #f8f6ed;
-  margin-bottom: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 main .content h3 {
   position: relative;
   padding-left: 25px;
   padding-bottom: 5px;
   margin-bottom: 30px;
+  margin-top: 60px;
 }
 main .content h3:before {
   position: absolute;
@@ -437,7 +442,6 @@ main .content ul, main .content ol {
   margin-left: 30px; /*はみ出ないように調整*/
   margin-right: 10px; /*はみ出ないように調整*/
   padding: 0.2em 0.5em 0.2em 2em;
-  display: inline-block;
 }
 main .content ul ul, main .content ul ol, main .content ol ul, main .content ol ol {
   background: none;
