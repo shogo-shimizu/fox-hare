@@ -27,7 +27,39 @@ body .singleThumbnail img {
      object-fit: cover;
 }
 body p {
-  font-size: 1.1em;
+  font-size: 0.9em;
+  line-height: 1.6em;
+  letter-spacing: 0.2em;
+}
+@media (max-width:768px) {
+  body p {
+    font-size: 1em;
+  }
+}
+body p.checkBox {
+  position: relative;
+  color: black;
+  background: #d0ecff;
+  line-height: 1.4;
+  padding: 0.25em 0.5em;
+  margin: 2em 0 0.5em;
+  border-radius: 0 5px 5px 5px;
+}
+body p.checkBox:after {
+  /*タブ*/
+  position: absolute;
+  font-family: "Font Awesome 5 Free", "Quicksand", "Avenir", "Arial", sans-serif;
+  font-weight: 900;
+  content: "\f00c Check";
+  background: #2196F3;
+  color: #fff;
+  left: 0px;
+  bottom: 100%;
+  border-radius: 5px 5px 0 0;
+  padding: 3px 7px 1px;
+  font-size: 0.7em;
+  line-height: 1;
+  letter-spacing: 0.05em;
 }
 body h1 {
   color: #9F353A;
@@ -56,15 +88,29 @@ body h2 {
   border: dashed 2px white;
   padding: 0.2em 0.5em;
   color: #f8f6ed;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 200px;
+  margin-bottom: 30px;
+  line-height: 1.6em;
+  letter-spacing: 0.1em;
+}
+@media (max-width:768px) {
+  body h2 {
+    font-size: 1.2em;
+  }
 }
 body h3 {
   position: relative;
   padding-left: 25px;
   padding-bottom: 5px;
   margin-bottom: 30px;
-  margin-top: 60px;
+  margin-top: 150px;
+  line-height: 1.6em;
+  letter-spacing: 0.1em;
+}
+@media (max-width:768px) {
+  body h3 {
+    font-size: 0.9em;
+  }
 }
 body h3:before {
   position: absolute;
@@ -86,11 +132,28 @@ body h3:after {
   border-bottom: solid 3px rgb(119, 195, 223);
 }
 body h4 {
+  position: relative;
+  padding-left: 1.2em;
   margin-bottom: 30px;
+  margin-top: 50px;
+  line-height: 1.6em;
+  letter-spacing: 0.1em;
 }
-body h4:first-letter {
-  font-size: 2em;
-  color: #7172ac;
+@media (max-width:768px) {
+  body h4 {
+    font-size: 0.9em;
+  }
+}
+body h4:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c"; /*アイコンのユニコード*/
+  font-weight: 900;
+  position: absolute; /*絶対位置*/
+  font-size: 1em; /*サイズ*/
+  left: 0; /*アイコンの位置*/
+  top: 0; /*アイコンの位置*/
+  color: #5ab9ff; /*アイコン色*/
+  font-weight: 900;
 }
 body a {
   color: #005CAF;
