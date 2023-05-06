@@ -1,4 +1,7 @@
 <?php
+// 吹き出しショートコード
+get_template_part('inc/fukidashi');
+
 
 // css js 読み込み
 add_action('wp_enqueue_scripts', 'add_styles');

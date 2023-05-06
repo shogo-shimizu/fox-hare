@@ -1,5 +1,6 @@
 @import 'assets/sass/colors';
 @import 'assets/sass/variables';
+@import 'assets/sass/fukidashi';
 body{
     color: #333;
     width: 90%;
@@ -38,7 +39,7 @@ body{
       color: black;
       background: #d0ecff;
       line-height: 1.4;
-      padding: 0.25em 0.5em;
+      padding: 1em 1em;
       margin: 2em 0 0.5em;
       border-radius: 0 5px 5px 5px;
     }

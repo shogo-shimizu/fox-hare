@@ -207,6 +207,157 @@ div#ez-toc-sticky-container ul li {
   font-family: "Font Awesome 5 Free";
 }
 
+.oneArea {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 1024px;
+  margin: 50px auto;
+  padding: 0 10px;
+}
+
+.oneArea .onebox {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.oneArea .onebox.oneboxRight {
+  flex-direction: row-reverse;
+  margin-top: 20px;
+}
+
+.oneArea .onebox .imgArea {
+  width: 16%;
+  position: relative;
+}
+
+.oneArea .onebox.oneboxLeft .imgArea img {
+  width: 100%;
+  max-width: 130px;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  padding-right: 30px;
+}
+
+.oneArea .onebox.oneboxRight .imgArea img {
+  width: 100%;
+  max-width: 130px;
+  position: absolute;
+  top: -20px;
+  left: auto;
+  right: 0;
+  padding-left: 30px;
+}
+
+.oneArea .onebox .fukiArea {
+  width: 63%;
+}
+
+.oneArea .onebox .fukidasi {
+  width: 100%;
+  position: relative;
+  padding: 25px;
+  background-color: skyblue;
+  font-size: 18px;
+  color: #231815;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.oneArea .onebox .fukidasi::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  top: 22px;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+}
+
+.oneArea .onebox .fukidasi::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  top: 40px;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+}
+
+.oneArea .onebox.oneboxLeft .fukidasi::before {
+  left: -15px;
+  border-left: 25px solid skyblue;
+  border-top: 25px solid transparent;
+}
+
+.oneArea .onebox.oneboxLeft .fukidasi::after {
+  left: -25px;
+  border-left: 25px solid #f8f6ed;
+  border-top: 25px solid transparent;
+}
+
+.oneArea .onebox.oneboxRight .fukidasi {
+  background-color: #fde5e5;
+}
+
+.oneArea .onebox.oneboxRight .fukidasi::before {
+  left: auto;
+  right: -15px;
+  border-left: 25px solid transparent;
+  border-top: 25px solid #fde5e5;
+}
+
+.oneArea .onebox.oneboxRight .fukidasi::after {
+  left: auto;
+  right: -25px;
+  border-left: 25px solid transparent;
+  border-top: 25px solid #f8f6ed;
+}
+
+@media screen and (max-width: 1024px) {
+  .oneArea .onebox.oneboxLeft .imgArea img {
+    max-width: 70%;
+    top: 0;
+  }
+  .oneArea .onebox.oneboxRight .imgArea img {
+    max-width: 70%;
+    top: 0;
+  }
+  .oneArea .onebox .fukidasi {
+    padding: 15px;
+    font-size: 14px;
+  }
+  .oneArea .onebox .fukidasi::before {
+    top: 8px;
+  }
+  .oneArea .onebox .fukidasi::after {
+    top: 20px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .oneArea {
+    margin: 30px auto;
+  }
+  .oneArea .onebox.oneboxRight {
+    margin-top: 15px;
+  }
+  .oneArea .onebox .imgArea {
+    width: 20%;
+  }
+  .oneArea .onebox .fukidasi {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+}
 header {
   width: 100vw;
   height: 400px;
