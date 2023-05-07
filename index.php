@@ -50,8 +50,8 @@
                         <div class="newContent">
                             <h2><a href="<?php the_permalink(); ?>">
                                     <?php
-                                    if (mb_strlen($post->post_title, 'UTF-8') > 30) {
-                                        $title = mb_substr($post->post_title, 0, 30, 'UTF-8');
+                                    if (mb_strlen($post->post_title, 'UTF-8') > 60) {
+                                        $title = mb_substr($post->post_title, 0, 60, 'UTF-8');
                                         echo $title . ' … ';
                                     } else {
                                         echo $post->post_title;
