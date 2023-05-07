@@ -33,6 +33,12 @@
   left: 0;
   padding-right: 30px;
 }
+@media (max-width:768px) {
+  .oneArea .onebox.oneboxLeft .imgArea img {
+    padding: 0;
+    margin: 0;
+  }
+}
 
 .oneArea .onebox.oneboxRight .imgArea img {
   width: 100%;
@@ -42,6 +48,12 @@
   left: auto;
   right: 0;
   padding-left: 30px;
+}
+@media (max-width:768px) {
+  .oneArea .onebox.oneboxRight .imgArea img {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .oneArea .onebox .fukiArea {
