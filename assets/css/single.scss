@@ -6,7 +6,7 @@ Theme Name : fox-hare
 @import '../../assets/sass/borderAnime';
 @import '../../assets/sass/ez_toc_custom';
 @import '../../assets/sass/fukidashi';
-
+@import '../../assets/sass/custom-style';
 
 header{
     width: 100vw;
@@ -174,7 +174,7 @@ main{
             border: dashed 2px white;
             padding: 0.2em 0.5em;
             color: $color_white;
-            margin-top: 200px;
+            margin-top: 120px;
             margin-bottom: 30px;
             line-height: 1.6em;
             letter-spacing: 0.1em;
@@ -188,7 +188,7 @@ main{
             padding-left: 25px;
             padding-bottom: 5px;
             margin-bottom: 30px;
-            margin-top: 150px;
+            margin-top: 100px;
             line-height: 1.6em;
             letter-spacing: 0.1em;
             @media($md){
@@ -235,6 +235,28 @@ main{
             top: 0;/*アイコンの位置*/
             color: #5ab9ff; /*アイコン色*/
             font-weight: 900;
+          }
+          h5 {
+            position: relative;
+            display: inline-block;
+            padding: 0 55px;
+          }
+          
+          h5:before, h5:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            display: inline-block;
+            width: 45px;
+            height: 1px;
+            background-color: black;
+          }
+          
+          h5:before {
+            left:0;
+          }
+          h5:after {
+            right: 0;
           }
 
        

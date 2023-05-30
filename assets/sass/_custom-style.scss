@@ -1,0 +1,10 @@
+.note {
+    background-color: none; /* 背景色 */
+    background-image: 
+    linear-gradient(90deg, transparent 0%, transparent 50%, transparent 50%, transparent 100%), /* 点線1の色 */
+    linear-gradient(180deg, #ccc 1px, transparent 1px); /* 点線2の色と太さ */
+    background-size: 8px 100%, /* 点線1のサイズ */
+                     100% 1.6em; /* 点線2のサイズ */
+    line-height: 1.6em; /* 文字の高さ */
+    padding-bottom: 1px; /* 最終行の下にも罫線を引く */
+  }
